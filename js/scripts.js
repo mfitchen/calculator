@@ -19,6 +19,8 @@ var number2 = parseInt(prompt("enter another number"));
 
 alert(divide(number1,number2));
 */
+
+// begin BMI calc
 var weight = parseInt(prompt("What is your weight (in pounds):"));
 var height = parseInt(prompt("What is your height (in inches):"));
 
@@ -47,3 +49,16 @@ var bmi = function(convertedWeight, heightResult) {
 var resultBmi = bmi(convertedWeight, heightResult);
 
 alert("your BMI is " + resultBmi);
+//end bmi
+
+//begin celcius calc
+var farenheit = parseInt(prompt("What is the temperature in farenheit"));
+
+var celsius = function(farenheit) {
+	return farenheit * 1.8 + 32;
+};
+
+var convertedCelsius = celsius(farenheit);
+
+alert("the temperature in celsius is: " + convertedCelsius);
+//end celsius calc
